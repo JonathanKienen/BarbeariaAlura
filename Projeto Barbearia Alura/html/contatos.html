@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Alura - Contatos</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <h1><img src="/img/logo.png" alt="Logo da Barbearia Alura"></h1>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/html/produtos.html">Produtos</a></li>
+                    <li><a href="/html/contatos.html">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main">
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome Sobrenome">
+    
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+    
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+    
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="61" rows="7" class="input-padrao" required placeholder="Digite sua mensagem"></textarea>
+    
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label><input type="radio" name="contato" value="email">Email</label>
+    
+                    <label><input type="radio" name="contato" value="telefone">Telefone</label>
+    
+                    <label><input type="radio" name="contato" value="wpp" checked>What'sapp</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+    
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+    
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+    
+            <section class="box">
+                <img src="/img/Simbolo.png" alt="Imagem" class="simbolo">
+            </section>
+        </section>
+
+        <section class="tabela">
+            <h2>Nosso horário de funcionamento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <img src="/img/logo-branco.png" alt="logo da Barbearia alura">
+        <p>© Copyright Barbearia Alura - 2022</p>
+    </footer>
+</body>
+
+</html>
