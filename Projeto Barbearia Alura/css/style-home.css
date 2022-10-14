@@ -4,94 +4,134 @@
     box-sizing: border-box;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
-
-h1 {
-    text-align: center;
-    padding: 30px 0;
-    font-size: 40px;
+/*Cabeçalho com lista de links*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: #CCCCCC;
+    padding: 20px 0;
 }
 
-.imagem {
-    width: 100%;
-}
-
-.informacoes {
-    text-align: justify;
-    padding: 20px;
-    width: 30%;
-}
-
-.informacoes h2 {
-    margin-bottom: 20px;
-    font-size: 25px;
-    text-align: center;
-}
-
-.paragrafo-enfase {
-    margin: 20px 0;
-    font-size: 30px;
-    font-style: italic;
-}
-
-.paragrafo-enfase span {
-    font-weight: bold;
-}
-
-.beneficios h3 {
-    text-align: center;
-    font-size: 25px;
-    padding: 20px;
-    width: 70%;
-}
-
-.lista {
+.header {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
 }
 
-.lista img {
-    width: 300px;
+.lista ul{
+    display: flex;
 }
 
-.lista li {
-    margin-top: 17px;
+.lista ul li {
+    margin-left: 20px;
+    list-style: none;
 }
 
-.produtos-page {
-    text-align: center;
-    padding: 30px 0 10px;
-    font-size: 25px;
-    margin-top: 20px;
-}
-
-.produtos-page button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: rgb(219, 187, 5);
-    color: white;
+.lista ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
     font-weight: bold;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5s all;
-    cursor: pointer;
+    font-size: 25px;
 }
 
-.produtos-page button:hover {
-    background-color: rgb(185, 158, 4);
-    transform: scale(1.1);
+.lista ul li a:hover {
+    color: rgb(160, 136, 4);
+    text-decoration: underline;
+}
+/*Imagem principal*/
+.banner {
+    width: 100%;
+    box-shadow: 0px 5px 20px black;
+}
+/*background*/
+main {
+    background: linear-gradient(white, grey);
+}
+/*Tamanho de toda a página*/
+.main {
+    width: 940px;
+    margin: 0 auto;
+}
+/*Sobre a barbearia*/
+.utencilios {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
+.informacoes h2, .beneficios h2, .mapa h2{ 
+    text-align: center;
+    font-size: 2em;
+    margin: 1.5em 0 1em;
+    clear: left;
+}
+
+.informacoes p {
+    margin: 0 0 1em;
+    text-align: justify;
+}
+
+.informacoes strong {
+    font-weight: bold;
+}
+
+.informacoes span {
+    font-style: italic;
+    font-weight: bold;
+}
+/*Nosso estabelecimento*/
+.mapa {
+    text-align: center;
+}
+
+.mapa p {
+    margin: 2em 0;
+}
+/*Beneficios*/
+.lista-benficios {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.lista-benficios ul {
+    width: 40%;
+}
+
+.lista-benficios ul li {
+    line-height: 2.3em;
+    list-style: none;
+}
+
+.lista-benficios ul li::before {
+    content: "✫ ";
+}
+
+.lista-benficios ul li:first-child {
+    font-weight: bold;
+}
+
+.beneficios img {
+    width: 37%;
+    opacity: 0.9;
+}
+/*Video*/
+.video {
+    width: 500px;
+    margin: 5em auto 0;
+    padding: 0 0 3em;
+}
+/*Rodapé*/
 footer {
     background-image: url(/img/bg.jpg);
-    color: white;
-    font-size: 15px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
+    color: white;
+    padding: 20px 0;
 }

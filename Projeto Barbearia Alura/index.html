@@ -8,54 +8,90 @@
     <title>Barbearia Alura</title>
 
     <link rel="stylesheet" href="/css/style-home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Barbearia Alura</h1>
-        <img src="/img/banner.jpg" alt="Banner" class="imagem">
-    </header>
-    <main>
-        <div class="informacoes">
-            <h2>Sobre a Barbearia Alura</h2>
-            <p>
-                Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu
-                cabelo e
-                barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
-            </p>
-            <p class="paragrafo-enfase">
-                Nossa missão é:<span>"Proporcionar auto-estima e qualidade de vida aos clientes".</span>
-            </p>
-            <p>
-                Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
-                padrão
-                de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
-            </p>
-        </div>
-        <div class="beneficios">
-            <h3>Benefícios</h3>
+        <div class="header">
+            <div>
+                <h1><img src="/img/logo.png" alt=""></h1>
+            </div>
             <div class="lista">
                 <ul>
-                    <li>Atendimento aos Cleintes</li>
-                    <li>Espaço Diferenciado</li>
-                    <li>Localização</li>
-                    <li>Profissionais Qualificados</li>
-                    <li>Cerveja cortesia no primeiro corte</li>
-                    <li>Cinuca para jogar com amigos</li>
-                    <li>Atendimento 16 horas por dia</li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/html/produtos.html">Produtos</a></li>
+                    <li><a href="/html/contatos.html">Contatos</a></li>
                 </ul>
-                <img src="/img/beneficios.jpg" alt="beneficios">
             </div>
         </div>
+    </header>
+
+    <img src="/img/banner.jpg" alt="Banner" class="banner">
+
+    <main>
+        <section class="main">
+            <section class="informacoes">
+                <h2>Sobre a Barbearia Alura</h2>
+
+                <img src="/img/utensilios.jpg" alt="utensilios" class="utencilios">
+
+                <p>
+                    Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de
+                    melhor para o seu
+                    barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada
+                    dia.
+                </p>
+                <p class="paragrafo-enfase">
+                    Nossa missão é:<span>"Proporcionar auto-estima e qualidade de vida aos clientes".</span>
+                </p>
+                <p>
+                    Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
+                    padrão
+                    de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+                </p>
+            </section>
+
+            <section class="mapa">
+                <h2>Nosso estabelecimento</h2>
+                <p>Nosso estabelecimento está localizado no coração da cidade</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3657.106693514131!2d-46.653910848930806!3d-23.564611267523407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1665746671531!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <section class="beneficios">
+                <h2>Benefícios</h2>
+                <div class="lista-benficios">
+                    <ul>
+                        <li>Atendimento aos Cleintes</li>
+                        <li>Espaço Diferenciado</li>
+                        <li>Localização</li>
+                        <li>Profissionais Qualificados</li>
+                        <li>Cerveja cortesia no primeiro corte</li>
+                        <li>Cinuca para jogar com amigos</li>
+                        <li>Atendimento 16 horas por dia</li>
+                    </ul>
+                    <img src="/img/beneficios.jpg" alt="beneficios">
+
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </section>
     </main>
-    <section>
-        <div class="produtos-page">
-            <h4>Conheça nossos produtos clicando no botão abaixo</h4>
-            <a href="/html/produtos.html"><button>Produtos</button></a>
-        </div>
-    </section>
+
     <footer>
-        <p>Projeto Front-End realizado por Jonathan J. Kienen</p>
+        <img src="/img/logo-branco.png" alt="logo">
+        <p>© Copyright Barbearia Alura - 2022</p>
     </footer>
 </body>
 
